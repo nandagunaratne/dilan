@@ -1,0 +1,237 @@
+<HTML>
+<!--Created By : Natasha Gunaratne-->
+<!--Created For: CMN352 Class - SAIT-->
+<!--Created Purpose : Dilan Enterprises AS400 Services Page -->
+<!--Function :  This is the  page of Dilan Enterprises website -->
+<!--         :  Dropdown Menu created to access different pages -->
+
+
+
+<HEAD>
+<TITLE>Welcome to Dilan Enterprise - Software 'R' Us </TITLE>
+<link rel="stylesheet" href="scripts/mycss.css" type="text/css">
+
+<style type="text/css">
+
+ 
+ 
+#sddm
+{	margin: 0;
+	padding: 0;
+	z-index: 30}
+
+#sddm li
+{	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	font: bold 11px arial}
+
+#sddm li a
+{	display: block;
+	margin: 0 1px 0 0;
+	padding: 4px 10px;
+	width: 160px;
+	background: #5970B2;
+	color: #FFF;
+	text-align: center;
+	text-decoration: none}
+
+#sddm li a:hover
+{	background: #49A3FF}
+
+#sddm div
+{	position: absolute;
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+	background: #EAEBD8;
+	border: 1px solid #5970B2}
+
+	#sddm div a
+	{	position: relative;
+		display: block;
+		margin: 0;
+		padding: 5px 10px;
+		width: auto;
+		white-space: nowrap;
+		text-align: left;
+		text-decoration: none;
+		background: #EAEBD8;
+		color: #2875DE;
+		font: 11px arial}
+
+	#sddm div a:hover
+	{	background: #49A3FF;
+		color: #FFF}
+	 	 
+
+a:link {color:#FF0000;}    /* unvisited link */
+a:visited {color:#00FF00;} /* visited link */
+a:hover {color:#FF00FF;}   /* mouse over link */
+a:active {color:#0000FF;}  /* selected link */
+p:first-letter{font-size: 200%; color:#660033;}
+
+<!--
+.style1 {color: #000099}
+-->
+</style>
+<script type="text/javascript">
+<!--
+var timeout         = 500;
+var closetimer		= 0;
+var ddmenuitem      = 0;
+
+// open hidden layer
+function mopen(id)
+{	
+	// cancel close timer
+	mcancelclosetime();
+
+	// close old layer
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+	// get new layer and show it
+	ddmenuitem = document.getElementById(id);
+	ddmenuitem.style.visibility = 'visible';
+
+}
+// close showed layer
+function mclose()
+{
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+}
+
+// go close timer
+function mclosetime()
+{
+	closetimer = window.setTimeout(mclose, timeout);
+}
+
+// cancel close timer
+function mcancelclosetime()
+{
+	if(closetimer)
+	{
+		window.clearTimeout(closetimer);
+		closetimer = null;
+	}
+}
+
+// close layer when click-out
+document.onclick = mclose; 
+// -->
+</script>
+</HEAD>
+<BODY>
+<table width="970" border="2" cellspacing="0" cellpadding=" ">
+  <tr valign="top"> 
+    <td width="370" height="106">
+      <img src="globalimages/dilan_logo.jpg" width="370" height="106" alt="Banner Picture for Website">	</td>
+      <td width="591" height="106">
+      <img src="globalimages/topbannerdilan.png" width="593" height="106" alt="Banner Picture for Website">	</td>
+  </tr>
+</table>
+<table width="970" border="1" cellpadding=" ">
+  <tr>
+   <ul id="sddm">
+    
+    
+    <li><a href="#" 
+        onmouseover="mopen('m1')" 
+        onmouseout="mclosetime()">Company Info</a>
+        <div id="m1" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="overview.html">Overview</a>
+        <a href="expertise.html">Expertise</a>
+       
+        
+        </div>
+    </li>
+    <li><a href="#" 
+        onmouseover="mopen('m2')" 
+        onmouseout="mclosetime()">Services</a>
+        <div id="m2" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="webservices.html">Web Design</a>
+        <a href="as400services.html">I-Series Software</a>
+        <a href="b2bservices.html">B2B Services</a>
+        
+        </div>
+     </li>
+     
+     <li><a href="#" 
+        onmouseover="mopen('m3')" 
+        onmouseout="mclosetime()">Our Strategy</a>
+        <div id="m3" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="process.html">Process methodology</a>
+        <a href="quality.html">Quality Assuarance</a>
+        
+        </div>
+     </li>
+     
+        
+    <li><a href="clients.html">Clients</a></li>
+    <li><a href="portfolio.html">Our Portfolio</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+   	</ul>
+    <div style="clear:both"></div>
+  
+  </tr>
+</table>
+
+<table width="970" height="50" border="1" cellpadding="1">
+	<tr>
+    <td><img src="images/ourstrategy.png" alt="iseries server" name="pagetagheader" width="947" height="46" align="absmiddle">
+    </td>
+    </tr>
+</table>
+
+
+<table width="972" height="800" border="3" cellpadding="5" cellspacing="1">
+  <tr>
+    <td width="637"><table width="634" height="730" border="3" cellpadding="5" cellspacing="2">
+      <tr>
+        <td height="43"><img name="overviewhead" src="images/as400services.png" width="616" height="30" alt="" style="background-color: #999999"></td>
+      </tr>
+      <tr>
+        <td height="677"><table width="611" height="560" border="3" cellpadding="5" cellspacing="1" bgcolor="#FFFFFF">
+          <tr>
+            <td width="77" height="602"><img name="bordertext" src="images/verticalline.png" width="77" height="602" alt="" style="background-color: #0066FF"></td>
+            <td width="495"><h1><strong>I-series  service</strong></h1>
+<h3 class="style13">AS400 is a familiar name for people who were in the computer  business in 1980&rsquo;s. </h3>
+              <h3 class="style13">                IBM i is an integrated  operating environment with a more than 20-year reputation for exceptional  security and business resilience.</h3>
+              <h3 class="style13">&nbsp;IBM i  (formerly known as i5/OS) running on an IBM Power Systems server offers a  highly scalable and virus resistant architecture with a proven reputation for  exceptional business resiliency. Running applications based on i has helped  companies over many years to focus on innovation and delivering new value to  their business, not just on managing their data center operations.</h3>
+              <h3 class="style13">                DB2 for i (formerly known  as DB2 for i5/OS) is an advanced, 64-bit Relational Database Management System  (RDBMS) that leverages the high performance, virtualization, and energy  efficiency features of IBM's Power Systems.</h3>
+              <h3 class="style13">                Dilan Enterprises product groups include a full line of  Mainframe and AS400 solutions covering all aspects of Data Center Management  including JCL Asset Management, DASD Data Management, Output Management, Tape  Media Management, Console Automation and iSeries / AS400 Data Compression,  Encryption, Security, and Messaging.</h3>
+              <h3 class="style13">                RPG, AS/400 Support Services</h3>
+              <h3 class="style13">                Many of the Insurers &amp; Banks are still running their  core systems on these technologies and therefore it is essential to have a  Long term Maintenance Partner.</h3>
+              <h3 class="style13">                Dilan Enterprise has an excellent track record in providing  Application Maintenance Services for various Insurers &amp; Banks in South-East  Asia, especially in AS/400 Technologies.</h3></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+    <td width="302"><table width="288" height="360" border="3" cellpadding="5" cellspacing="1" bgcolor="#F7F7F7">
+      <tr>
+        <td width="268" height="52"><p>Complete Custom Solutions for AS/400</p>
+          <p><img src="images/as400.gif" alt="" name="downloadbrochure" width="150" height="181" hspace="50"></p></td>
+      </tr>
+      <tr>
+        <td><img src="images/standardpackage.png" alt="Our package" name="ourpackage" width="232" height="232" hspace="20" align="middle" style="background-color: #CCCCCC"></td>
+      </tr>
+      <tr>
+        <td><p>Complete Development Cycle</p>
+          <p><img src="images/devCycle.gif" alt="Testimonials" name="Testimonials" width="250" height="197" hspace="10"></p></td>
+      </tr>
+    </table></td>
+  </tr>
+  
+</table>
+<p>&nbsp;</p>
+<p>	<img src="globalimages/bottom.png" width="972" height="46" alt="Page Bottom Indication"></p>
+</BODY>
+</HTML>

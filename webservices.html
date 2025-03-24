@@ -1,0 +1,281 @@
+<HTML>
+<!--Created By : Natasha Gunaratne-->
+<!--Created For: CMN352 Class - SAIT-->
+<!--Created Purpose : Dilan Enterprises Page -->
+<!--Function :  This is the  page of Dilan Enterprises website -->
+<!--         :  Dropdown Menu created to access different pages -->
+
+
+
+<HEAD>
+<TITLE>Welcome to Dilan Enterprise - Software 'R' Us </TITLE>
+<link rel="stylesheet" href="scripts/mycss.css" type="text/css">
+
+<style type="text/css">
+
+
+ ul.b {list-style-type:square;
+ } 
+ 
+#sddm
+{	margin: 0;
+	padding: 0;
+	z-index: 30}
+
+#sddm li
+{	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	font: bold 11px arial}
+
+#sddm li a
+{	display: block;
+	margin: 0 1px 0 0;
+	padding: 4px 10px;
+	width: 160px;
+	background: #5970B2;
+	color: #FFF;
+	text-align: center;
+	text-decoration: none}
+
+#sddm li a:hover
+{	background: #49A3FF}
+
+#sddm div
+{	position: absolute;
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+	background: #EAEBD8;
+	border: 1px solid #5970B2}
+
+	#sddm div a
+	{	position: relative;
+		display: block;
+		margin: 0;
+		padding: 5px 10px;
+		width: auto;
+		white-space: nowrap;
+		text-align: left;
+		text-decoration: none;
+		background: #EAEBD8;
+		color: #2875DE;
+		font: 11px arial}
+
+	#sddm div a:hover
+	{	background: #49A3FF;
+		color: #FFF}
+	 	 
+
+a:link {color:#FF0000;}    /* unvisited link */
+a:visited {color:#00FF00;} /* visited link */
+a:hover {color:#FF00FF;}   /* mouse over link */
+a:active {color:#0000FF;}  /* selected link */
+p:first-letter{font-size: 200%; color:#660033;}
+
+<!--
+.style1 {color: #000099}
+-->
+</style>
+<script type="text/javascript">
+<!--
+var timeout         = 500;
+var closetimer		= 0;
+var ddmenuitem      = 0;
+
+// open hidden layer
+function mopen(id)
+{	
+	// cancel close timer
+	mcancelclosetime();
+
+	// close old layer
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+	// get new layer and show it
+	ddmenuitem = document.getElementById(id);
+	ddmenuitem.style.visibility = 'visible';
+
+}
+// close showed layer
+function mclose()
+{
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+}
+
+// go close timer
+function mclosetime()
+{
+	closetimer = window.setTimeout(mclose, timeout);
+}
+
+// cancel close timer
+function mcancelclosetime()
+{
+	if(closetimer)
+	{
+		window.clearTimeout(closetimer);
+		closetimer = null;
+	}
+}
+
+// close layer when click-out
+document.onclick = mclose; 
+// -->
+</script>
+
+</HEAD>
+<BODY>
+<table width="970" border="2" cellspacing="0" cellpadding=" ">
+  <tr valign="top"> 
+    <td width="370" height="106">
+      <img src="globalimages/dilan_logo.jpg" width="370" height="106" alt="Banner Picture for Website">	</td>
+      <td width="591" height="106">
+      <img src="globalimages/topbannerdilan.png" width="593" height="106" alt="Banner Picture for Website">	</td>
+  </tr>
+</table>
+<table width="970" border="1" cellpadding=" ">
+  <tr>
+   <ul id="sddm">
+    
+    
+    <li><a href="#" 
+        onmouseover="mopen('m1')" 
+        onmouseout="mclosetime()">Company Info</a>
+        <div id="m1" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="overview.html">Overview</a>
+        <a href="expertise.html">Expertise</a>
+       
+        
+        </div>
+    </li>
+    <li><a href="#" 
+        onmouseover="mopen('m2')" 
+        onmouseout="mclosetime()">Services</a>
+        <div id="m2" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="webservices.html">Web Design</a>
+        <a href="as400services.html">I-Series Software</a>
+        <a href="b2bservices.html">B2B Services</a>
+        
+        </div>
+     </li>
+     
+     <li><a href="#" 
+        onmouseover="mopen('m3')" 
+        onmouseout="mclosetime()">Our Strategy</a>
+        <div id="m3" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="process.html">Process methodology</a>
+        <a href="quality">Quality Assuarance</a>
+        
+        </div>
+     </li>
+     
+        
+    <li><a href="clients.html">Clients</a></li>
+    <li><a href="portfolio.html">Our Portfolio</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+   	</ul>
+    <div style="clear:both"></div>
+  
+  </tr>
+</table>
+
+<table width="970" height="50" border="1" cellpadding="1">
+	<tr>
+    <td><img src="images/webservices.png" alt="Web Services" name="webservicesheader" width="956" height="41" align="absmiddle">
+    </td>
+    </tr>
+</table>
+
+
+<table width="968" height="652" border="3" cellpadding="5" cellspacing="1">
+  <tr>
+    <td width="637"><table width="631" height="363" border="3" cellpadding="5" cellspacing="2">
+      <tr>
+        <td width="609" height="43"><img src="images/webdesignsubhead.png" alt="web design" name="overviewhead" width="615" height="30" style=""></td>
+      </tr>
+      <tr>
+        <td><table width="611" height="275" border="3" cellpadding="5" cellspacing="1" bgcolor="#F5F5F5">
+          <tr>
+            <td width="65"><img name="verticalline" src="images/verticalline.png" width="65" height="400" alt="vertical line"></td>
+            <td width="513">
+              <h1><strong>Web Services</strong></h1>
+              <h2> With more and more people turning towards online services,  custom website design and development is fast emerging as a modern day  marketing tool. Websites act as a virtual super market with no physical and  geographical limits. Nowadays a well designed and developed website is  prerequisite for a vast potential business.</h2>
+              <h2> We deliver range of websites as follows:</h2>
+              <ul>
+              <h3><li>Simple one page</li>
+                <li>Informational website</li>
+                <li>Small business website</li>
+                <li>Directory website</li>
+                <li>Database website</li></h3>
+              </ul>
+              <h2>Our Web Services include:</h2>
+              <ul>
+              <h3><li>Web Site Design</li>
+                <li>Web  Hosting</li>
+                <li>E-Commerce</li>
+                <li>Website  Maintenance</li>
+                <li>Logo Design</li>
+                <li>I-series Database Access through web</li></h3>
+              </ul></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+    <td width="300"><table width="300" height="467" border="3" cellpadding="5" cellspacing="1" bgcolor="#C1CEEE">
+      <tr>
+        <td width="280" height="57"><a href="dilancatalog.pdf"><img src="images/downloadbrochure.png" alt="software catalog" name="downloadbrochure" width="280" height="49"></a></td>
+      </tr>
+      <tr>
+        <td height="209"><img src="images/typography.jpg" alt="Our Specials" name="ourspecials" width="282" height="178" style=""></td>
+      </tr>
+      <tr>
+        <td height="124">
+        <h2 class="epac2">"Clear your Doubt."</h2>
+        <h3> We need to find a solution for accessing AS/400 data via your parent companies Web applications. They use Active Server Pages for most of their Web apps. Any IBM products or 3rd party products that will allow quick access to AS/400 data? - Customer</h3>
+        <h3>Certainly there are quick access to the AS/400 data from the Web site using our Software.</h3>
+        </td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="250"><table width="635" height="196" border="3" cellpadding="5" cellspacing="1" bgcolor="#FFFFFF">
+      <tr>
+        <td width="163"><p><img src="images/ourclients.jpg" width="139" height="55" alt="ourwebclients"></p>
+          <p>Our web clients will share their experience with each  during annual gatherings and seminars for each others benefit.</p></td>
+        <td width="195"><p><img src="images/pointform3.png" width="290" height="46"></p>
+          <p>Domain Registration</p>
+          <p>Web Hosting</p>
+          <p>Quality Assurance</p></td>
+        <td width="231"><p><img src="images/whyus.jpg" width="139" height="55" alt="why us"></p>
+          <p>Why us ?</p>
+          <p>Contact our Clients for more information.</p></td>
+      </tr>
+    </table></td>
+    
+        
+    <td>
+      <table width="246" border="3" cellspacing="0" cellpadding="0" align="center">
+        <tr>
+          <td><img src="images/livesupport.jpg" width="246" height="56" alt="livesupport"></td>
+        </tr>
+        <tr>
+          <td><img src="images/24x7support.jpg" width="246" height="154" alt="supportpeople"></td>
+        </tr>
+        <tr>
+          <td><img src="images/telsupport.png" width="246" height="38" alt="telsupport"></td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>	<img src="globalimages/bottom.png" width="972" height="46" alt="Page Bottom Indication"></p>
+</BODY>
+</HTML>

@@ -1,0 +1,148 @@
+body 
+	{
+	background-color:#E6FFFF;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+h1
+	{
+	color:#004080;
+	text-align:center;
+	font-size:16px;
+	}
+h2
+	{
+	color:#3272C0;
+	text-align:justify;
+	font-size: 14px;
+	}
+h3
+	{
+	color:#0000A4;
+	text-align:left;
+	font-size: 12px;
+	}
+
+h4
+	{
+	color:#C1CEEE;
+	text-align:left;
+	font-size: 10px;
+	}
+p 
+  {  
+  font-family:Arial, Helvetica, sans-serif ; 
+  font-size: 12px; 
+  font-style: normal; 
+  line-height: 14px; 
+  font-weight: normal; 
+  color:#0C0C0C; 
+  text-decoration: none; 
+  }
+
+
+p.style1 {color:#309;
+font-size:14px;
+font-family:Arial, Helvetica, sans-serif}
+
+p.style12 {color:#309;
+font-size:12px;
+font-family:Arial, Helvetica, sans-serif}
+
+p.style13 {color:#309;
+font-size:10px;
+font-family:Arial, Helvetica, sans-serif}
+	
+	
+p.padding 
+  {  
+  padding-top: 10px; 
+  padding-left: 10px; 
+  padding-right: 10px;
+  line-height: 18px
+  }
+  
+.epac {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: bold;
+	color: #CC0000;
+	text-decoration: none;
+	letter-spacing: -1px;
+	text-align: left;
+  }
+
+.epac2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: bold;
+	color:#0000A0;
+	text-decoration: none;
+	letter-spacing: -1px;
+	text-align: left;
+  }
+
+ ul.b {list-style-type:square;
+ } 
+ 
+#sddm
+{	margin: 0;
+	padding: 0;
+	z-index: 30}
+
+#sddm li
+{	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	font: bold 11px arial}
+
+#sddm li a
+{	display: block;
+	margin: 0 1px 0 0;
+	padding: 4px 10px;
+	width: 110px;
+	background: #5970B2;
+	color: #FFF;
+	text-align: center;
+	text-decoration: none}
+
+#sddm li a:hover
+{	background: #49A3FF}
+
+#sddm div
+{	position: absolute;
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+	background: #EAEBD8;
+	border: 1px solid #5970B2}
+
+	#sddm div a
+	{	position: relative;
+		display: block;
+		margin: 0;
+		padding: 5px 10px;
+		width: auto;
+		white-space: nowrap;
+		text-align: left;
+		text-decoration: none;
+		background: #EAEBD8;
+		color: #2875DE;
+		font: 11px arial}
+
+	#sddm div a:hover
+	{	background: #49A3FF;
+		color: #FFF}
+	 	 
+
+a:link {color:#FF0000;}    /* unvisited link */
+a:visited {color:#00FF00;} /* visited link */
+a:hover {color:#FF00FF;}   /* mouse over link */
+a:active {color:#0000FF;}  /* selected link */
+
+
+.style4 {
+	font-family: Arial, Helvetica, sans-serif;
+}

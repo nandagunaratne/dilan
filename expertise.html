@@ -1,0 +1,334 @@
+<HTML>
+<!--Created By : Natasha Gunaratne-->
+<!--Created For: CMN352 Class - SAIT-->
+<!--Created Purpose : Dilan Enterprises Website -->
+<!--Function :  This is the Expertise page of Dilan Enterprises website -->
+<!--         :  Dropdown Menu created to access different pages -->
+
+
+
+<HEAD>
+<TITLE>Expertise of Dilan Enterprise - Software 'R' Us </TITLE>
+<link rel="stylesheet" href="scripts/mycss.css" type="text/css">
+
+<style type="text/css">
+
+
+ 
+#sddm
+{	margin: 0;
+	padding: 0;
+	z-index: 30}
+
+#sddm li
+{	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	font: bold 11px arial}
+
+#sddm li a
+{	display: block;
+	margin: 0 1px 0 0;
+	padding: 4px 10px;
+	width: 160px;
+	background: #5970B2;
+	color: #FFF;
+	text-align: center;
+	text-decoration: none}
+
+#sddm li a:hover
+{	background: #49A3FF}
+
+#sddm div
+{	position: absolute;
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+	background: #EAEBD8;
+	border: 1px solid #5970B2}
+
+	#sddm div a
+	{	position: relative;
+		display: block;
+		margin: 0;
+		padding: 5px 10px;
+		width: auto;
+		white-space: nowrap;
+		text-align: left;
+		text-decoration: none;
+		background: #EAEBD8;
+		color: #2875DE;
+		font: 11px arial}
+
+	#sddm div a:hover
+	{	background: #49A3FF;
+		color: #FFF}
+	 	 
+
+a:link {color:#FF0000;}    /* unvisited link */
+a:visited {color:#00FF00;} /* visited link */
+a:hover {color:#FF00FF;}   /* mouse over link */
+a:active {color:#0000FF;}  /* selected link */
+
+
+<!--
+.style1 {color: #000099}
+-->
+</style>
+<script type="text/javascript">
+<!--
+var timeout         = 500;
+var closetimer		= 0;
+var ddmenuitem      = 0;
+
+// open hidden layer
+function mopen(id)
+{	
+	// cancel close timer
+	mcancelclosetime();
+
+	// close old layer
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+	// get new layer and show it
+	ddmenuitem = document.getElementById(id);
+	ddmenuitem.style.visibility = 'visible';
+
+}
+// close showed layer
+function mclose()
+{
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+}
+
+// go close timer
+function mclosetime()
+{
+	closetimer = window.setTimeout(mclose, timeout);
+}
+
+// cancel close timer
+function mcancelclosetime()
+{
+	if(closetimer)
+	{
+		window.clearTimeout(closetimer);
+		closetimer = null;
+	}
+}
+
+// close layer when click-out
+document.onclick = mclose; 
+// -->
+</script>
+</HEAD>
+<BODY>
+<table width="970" border="2" cellspacing="0" cellpadding=" ">
+  <tr valign="top"> 
+    <td width="370" height="106">
+      <img src="globalimages/dilan_logo.jpg" width="370" height="106" alt="Banner Picture for Website">	</td>
+      <td width="591" height="106">
+      <img src="globalimages/topbannerdilan.png" width="593" height="106" alt="Banner Picture for Website">	</td>
+  </tr>
+</table>
+<table width="970" border="1" cellpadding=" ">
+  <tr>
+   <ul id="sddm">
+    
+    
+    <li><a href="#" 
+        onmouseover="mopen('m1')" 
+        onmouseout="mclosetime()">Company Info</a>
+        <div id="m1" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="overview.html">Overview</a>
+        <a href="expertise.html">Expertise</a>
+       
+        
+        </div>
+    </li>
+    <li><a href="#" 
+        onmouseover="mopen('m2')" 
+        onmouseout="mclosetime()">Services</a>
+        <div id="m2" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="webservices.html">Web Design</a>
+        <a href="as400services.html">I-Series Software</a>
+        <a href="b2bservices.html">B2B Services</a>
+        
+        </div>
+     </li>
+     
+     <li><a href="#" 
+        onmouseover="mopen('m3')" 
+        onmouseout="mclosetime()">Our Strategy</a>
+        <div id="m3" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="process.html">Process methodology</a>
+        <a href="quality.html">Quality Assuarance</a>
+       
+        </div>
+     </li>
+     
+        
+    <li><a href="clients.html">Clients</a></li>
+    <li><a href="portfolio.html">Our Portfolio</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+   	</ul>
+    <div style="clear:both"></div>
+  
+  </tr>
+</table>
+
+<table width="970" height="50" border="1" cellpadding="1">
+	<tr>
+    <td><img src="images/expertlong.png" alt="This Page info" name="overviewpagetagheader" width="955" height="44" align="absmiddle">
+    </td>
+    </tr>
+</table>
+
+
+<table width="972" height="623" border="3" cellpadding="5" cellspacing="1">
+  <tr>
+    <td width="638" height="369"><table width="632" height="343" border="3" cellpadding="5" cellspacing="2">
+      <tr>
+        <td width="610" height="43"><img src="images/ourexpertise.png" alt="" name="overviewhead" width="612" height="30" style=""></td>
+      </tr>
+      <tr>
+        <td height="294"><table width="600" height="238" border="3" cellpadding="5" cellspacing="1">
+          <tr>
+            <td width="200" height="236">
+            	<table width="190" border="1" cellspacing="1" cellpadding="5">
+  					<tr>
+    					<td class="epac">Operating Systems</td>
+   				    </tr>
+				</table>
+
+            	<table width="190" height="150" border="3" align="center" cellpadding="1" cellspacing="1" bgcolor="#C1CEEE">
+	 		  		<tr>
+	 		    		<td>Microsoft Windows</td>
+ 		      		</tr>
+	 		  		<tr>
+	 		    		<td>AS/400</td>
+ 		      		</tr>
+	 		  		<tr>
+	 		    		<td>I-5 OS</td>
+ 		      		</tr>
+	 		  		<tr>
+	 		    		<td>UNIX</td>
+ 		      		</tr>
+                    <tr>
+	 		    		<td>Linux</td>
+ 		      		</tr>
+	 		  	</table>
+             </td>
+             
+            <td width="200">
+            <table width="190" border="1" cellspacing="1" cellpadding="5">
+  					<tr>
+    					<td class="epac">Programming Languages</td>
+   				    </tr>
+				</table>
+             
+            <table width="190" height="150" border="3" align="center" cellpadding="1" cellspacing="1" bgcolor="#C1CEEE">
+	 		  		<tr>
+	 		    		<td>RPG / ILE RPG</td>
+ 		      		</tr>
+	 		  		<tr>
+	 		    		<td>VB.NET</td>
+ 		      		</tr>
+	 		  		<tr>
+	 		    		<td>C, C++</td>
+ 		      		</tr>
+	 		  		<tr>
+	 		    		<td>JAVA</td>
+ 		      		</tr>
+                    <tr>
+	 		    		<td>COBOL</td>
+ 		      		</tr>
+	 		  	</table></td>
+                
+            <td width="200">
+           		<table width="190" border="1" cellspacing="1" cellpadding="5">
+  					<tr>
+    					<td class="epac">Relational Databases</td>
+   				    </tr>
+				</table> 
+            	<table width="190" height="150" border="3" align="center" cellpadding="1" cellspacing="1" bgcolor="#C1CEEE">
+	 		  		<tr>
+	 		    		<td>DB2</td>
+ 		      		</tr>
+	 		  		<tr>
+	 		    		<td>ORACLE</td>
+ 		      		</tr>
+	 		  		<tr>
+	 		    		<td>SQL Server</td>
+ 		      		</tr>
+	 		  		<tr>
+	 		    		<td>MySQL</td>
+ 		      		</tr>
+                    <tr>
+	 		    		<td>Microsoft Access</td>
+ 		      		</tr>
+	 		  	</table></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+    <td width="301"><table width="297" height="337" border="3" cellpadding="5" cellspacing="1">
+      <tr>
+        <td width="277" height="58"><img src="images/technologyused.png" alt="Our Technology" name="technology" width="271" height="23" hspace="5"></td>
+      </tr>
+      <tr>
+        <td height="147"><ul>
+          <li>Microsoft Technologies</li>
+          <li>Java Technologies</li>
+          <li>Middleware Application Intergration</li>
+          <li>Relational Database Systems</li>
+          <li>Case Tools</li>
+          <li>Test Automation</li>
+          <li>Intergrated Development Environment</li>
+          <li>Application and Web Servers</li>
+          <li>IBM Technologies</li>
+        </ul></td>
+      </tr>
+      
+    </table></td>
+  </tr>
+  <tr>
+    <td height="245"><table width="635" height="162" border="3" cellpadding="5" cellspacing="1" bgcolor="#E5E5E5">
+      <tr>
+        <td width="150" height = "85" ><p><img src="images/oracle.gif" alt="" name="oracle" width="117" height="49" align="middle"></p></td>
+        <td width="150" height = "85" ><img src="images/logo_java.gif" alt="" name="java" width="117" height="49"></td>
+        <td width="150" height = "85" ><img name="net" src="images/logo_vb.net.gif" width="117" height="49" alt=""></td>
+        <td width="150" height = "85" ><img name="net" src="images/logo_php.gif" width="117" height="49" alt=""></td>
+      </tr>
+      <tr>
+        <td width="150" height = "50" ><p><img src="images/ccplus.gif" alt="" name="cplus" width="117" height="49"></p></td>
+        <td width="150" height = "50" ><img src="images/MS_Acces.gif" alt="" name="msaccess" width="117" height="49"></td>
+        <td width="150" height = "50" ><img name="sql" src="images/sql-server.gif" width="117" height="49" alt=""></td>
+        <td width="150" height = "50" ><img name="net" src="images/my-sql.gif" width="117" height="49" alt=""></td>
+      </tr>
+    </table>
+    <p><strong>Core Technical Skills</strong>:<br>
+    Dilan Enterprise has significant development experience in the following technologies:</p></td>
+    <td><table width="297" height="193" border="3" cellpadding="5" cellspacing="1">
+      <tr>
+        <td width="208"><img src="images/IBM-AS400.gif" width="205" height="180" alt="ibm40"></td>
+        <td width="56"><p>IBM</p>
+          <p>AS/400</p>
+          <p>Servers</p></td>
+      </tr>
+    </table></td>
+    
+  </tr>
+</table>
+ 
+<p>&nbsp;</p>
+<p>	<img src="globalimages/bottom.png" width="972" height="46" alt="Page Bottom Indication"></p>
+</BODY>
+</HTML>

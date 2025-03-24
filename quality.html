@@ -1,0 +1,284 @@
+<HTML>
+<!--Created By : Natasha Gunaratne-->
+<!--Created For: CMN352 Class - SAIT-->
+<!--Created Purpose : Dilan Enterprises Quality  Page -->
+<!--Function :  This is the  page of Dilan Enterprises website -->
+<!--         :  Dropdown Menu created to access different pages -->
+
+
+
+<HEAD>
+<TITLE>Welcome to Dilan Enterprise - Software 'R' Us </TITLE>
+<link rel="stylesheet" href="scripts/mycss.css" type="text/css">
+
+
+
+<style type="text/css">
+
+
+#sddm
+{	margin: 0;
+	padding: 0;
+	z-index: 30}
+
+#sddm li
+{	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	font: bold 11px arial}
+
+#sddm li a
+{	display: block;
+	margin: 0 1px 0 0;
+	padding: 4px 10px;
+	width: 160px;
+	background: #5970B2;
+	color: #FFF;
+	text-align: center;
+	text-decoration: none}
+
+#sddm li a:hover
+{	background: #49A3FF}
+
+#sddm div
+{	position: absolute;
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+	background: #EAEBD8;
+	border: 1px solid #5970B2}
+
+	#sddm div a
+	{	position: relative;
+		display: block;
+		margin: 0;
+		padding: 5px 10px;
+		width: auto;
+		white-space: nowrap;
+		text-align: left;
+		text-decoration: none;
+		background: #EAEBD8;
+		color: #2875DE;
+		font: 11px arial}
+
+	#sddm div a:hover
+	{	background: #49A3FF;
+		color: #FFF}
+	 	 
+
+a:link {color:#FF0000;}    /* unvisited link */
+a:visited {color:#00FF00;} /* visited link */
+a:hover {color:#FF00FF;}   /* mouse over link */
+a:active {color:#0000FF;}  /* selected link */
+
+<!--
+
+-->
+</style>
+<script type="text/javascript">
+<!--
+var timeout         = 500;
+var closetimer		= 0;
+var ddmenuitem      = 0;
+
+// open hidden layer
+function mopen(id)
+{	
+	// cancel close timer
+	mcancelclosetime();
+
+	// close old layer
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+	// get new layer and show it
+	ddmenuitem = document.getElementById(id);
+	ddmenuitem.style.visibility = 'visible';
+
+}
+// close showed layer
+function mclose()
+{
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+}
+
+// go close timer
+function mclosetime()
+{
+	closetimer = window.setTimeout(mclose, timeout);
+}
+
+// cancel close timer
+function mcancelclosetime()
+{
+	if(closetimer)
+	{
+		window.clearTimeout(closetimer);
+		closetimer = null;
+	}
+}
+
+// close layer when click-out
+document.onclick = mclose; 
+// -->
+</script>
+</HEAD>
+<BODY>
+<table width="970" border="2" cellspacing="0" cellpadding=" ">
+  <tr valign="top"> 
+    <td width="370" height="106">
+      <img src="globalimages/dilan_logo.jpg" width="370" height="106" alt="Banner Picture for Website">	</td>
+      <td width="591" height="106">
+      <img src="globalimages/topbannerdilan.png" width="593" height="106" alt="Banner Picture for Website">	</td>
+  </tr>
+</table>
+<table width="970" border="1" cellpadding=" ">
+  <tr>
+   <ul id="sddm">
+    
+    
+    <li><a href="#" 
+        onmouseover="mopen('m1')" 
+        onmouseout="mclosetime()">Company Info</a>
+        <div id="m1" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="overview.html">Overview</a>
+        <a href="expertise.html">Expertise</a>
+       
+        
+        </div>
+    </li>
+    <li><a href="#" 
+        onmouseover="mopen('m2')" 
+        onmouseout="mclosetime()">Services</a>
+        <div id="m2" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="webservices.html">Web Design</a>
+        <a href="as400services.html">I-Series Software</a>
+        <a href="b2bservices.html">B2B Services</a>
+        
+        </div>
+     </li>
+     
+     <li><a href="#" 
+        onmouseover="mopen('m3')" 
+        onmouseout="mclosetime()">Our Strategy</a>
+        <div id="m3" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="process.html">Process methodology</a>
+        <a href="quality.html">Quality Assuarance</a>
+        
+        </div>
+     </li>
+     
+        
+    <li><a href="clients.html">Clients</a></li>
+    <li><a href="portfolio.html">Our Portfolio</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+   	</ul>
+    <div style="clear:both"></div>
+  
+  </tr>
+</table>
+
+<table width="970" height="50" border="1" cellpadding="1">
+	<tr>
+    <td><img src="images/ourstrategy.png" alt="This Page info" name="pagetagheader" width="955" height="42" align="absmiddle">
+    </td>
+    </tr>
+</table>
+
+
+<table width="967" height="881" border="3" cellpadding="5" cellspacing="1">
+  <tr>
+    <td width="658"><table width="652" height="577" border="0" cellpadding="5" cellspacing="2" bgcolor="#D7D7D7">
+      <tr>
+        <td width="630" height="43"><img name="overviewhead" src="images/quality.png" width="602" height="45" alt="" style="background-color: #999999"></td>
+      </tr>
+      <tr>
+        <td height="508"><table width="636" height="455" border="3" cellpadding="5" cellspacing="1" bgcolor="#094A8C">
+          <tr>
+            <td width="77" height="453"><img src="images/verticalline.png" width="77" height="400"></td>
+            <td width="526"><pre><img src="images/qualitylogo.jpg" alt="" name="model" width="512" height="384" hspace="5" align="middle"></pre></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+    <td width="276"><table width="280" height="580" border="0" cellpadding="5" cellspacing="1" bgcolor="#F0F0F0">
+      <tr>
+        <td width="282" height="572"><table width="254" height="514" border="0" cellpadding="2" cellspacing="1" bgcolor="#F7F7F7">
+          <tr>
+            <td width="234" height="52"><p><u class="style1">Quality Management</u>
+                </p>
+              <p><span class="style12">A Quality management team comprising professional well over 10 years experience. We ensure our software in confirmity with standards.</span> State-of the-art in technique uses industry standards and established procedures to create best software products.</p></td>
+          </tr>
+          <tr>
+            <td height="189"><p><u>Maintenance Service</u>
+                </p>
+              <p><span class="style12">Entire project development, from initial Study phase to  Testing, is carried out at Dilan Enterprise on site facility. So we maintain our software for customers with industry sttandards. Customization also can be done by our software developers on your request.Project  management and communication aspects are controlled by Program managers who are  internal client representatives. </span></p></td>
+          </tr>
+          <tr>
+            <td height="168"><p><u class="style1">Enhancement Service</u>
+              </p>
+              <p><span class="style12">Our software policy is to upgrade the software on yearly basis. New version of our software will be available with free of charge once you own the previous version. We guarantee all versions backdated to five years. In addition to that we will help you to upgrade the software with our special team.</span></p></td>
+          </tr>
+        </table>   </td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="272"><table width="651" height="255" border="3" cellpadding="5" cellspacing="1" bgcolor="#F8F8F8">
+      <tr>
+        <td width="631" height="247"><table width="98%" border="0" cellspacing="0" cellpadding="0" bgcolor="#EFEFEF">
+            
+              <tr>
+                <td align="left" class="epac2">Quality Assurance</td>
+              </tr>
+              <tr>
+                <td height="75" align="left" class="style1"><p>Strict coordination, superior infrastructure, state-of-the-art quality management systems, and ultimate information security allow us to avoid miscalculations and misunderstandings in our client relations.Thus, we guarantee highest levels of customer satisfaction. Our highly skilled, adaptable staff and quality assurance procedures minimize risk associated with IT outsourcing.</p>
+                </td>
+              </tr>
+           
+          </table>
+         
+          
+          <table width="98%" border="0" cellspacing="2" cellpadding="2" bgcolor="#EFEFEF">
+            
+              <tr>
+                <td align="left" class="epac2">Simplicity</td>
+              </tr>
+              <p>&nbsp;</p>
+              <tr>
+                <td height="65" align="left" class="style1"><p><span class="style4">For complex products, a designer must be able to support thousands of options, rules and constraints. The ability to easily setup and manage your configuration rules is one of our products strengths.</span></p>
+                  <br>
+                </p></td>
+              </tr>
+           
+          </table>
+          </td>
+        
+      </tr>
+    </table></td>
+    <td height="272">
+    
+    <table width="246" height="252" border="0" cellpadding="0" cellspacing="1">
+      <tr>
+        <td height="56"><img src="images/livesupport.jpg" alt="24x7sup" width="246" height="56" hspace="15"></td>
+      </tr>
+      <tr>
+        <td height="154"><img src="images/24x7support.jpg" alt="support" width="246" height="154" hspace="15"></td>
+      </tr>
+      <tr>
+        <td><img src="images/telsupport.png" alt="telnum" width="246" height="38" hspace="15"></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>	<img src="globalimages/bottom.png" width="972" height="46" alt="Page Bottom Indication"></p>
+</BODY>
+</HTML>

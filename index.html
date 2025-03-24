@@ -1,0 +1,249 @@
+<!DOCTYPE HTML>
+
+<HTML>
+<!--Created By : Natasha Gunaratne-->
+<!--Created For: CMN352 Class - SAIT-->
+<!--Created Purpose : Dilan Enterprises Home Page -->
+<!--Function :  This is the Home page of Dilan Enterprises website -->
+<!--         :  Dropdown Menu created to access different pages -->
+
+<HEAD>
+<TITLE>Welcome to Dilan Enterprise - Software 'R' Us </TITLE>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+<script type="text/javascript">
+<!--
+var timeout         = 500;
+var closetimer		= 0;
+var ddmenuitem      = 0;
+
+// open hidden layer
+function mopen(id)
+{	
+	// cancel close timer
+	mcancelclosetime();
+
+	// close old layer
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+	// get new layer and show it
+	ddmenuitem = document.getElementById(id);
+	ddmenuitem.style.visibility = 'visible';
+
+}
+// close showed layer
+function mclose()
+{
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+}
+
+// go close timer
+function mclosetime()
+{
+	closetimer = window.setTimeout(mclose, timeout);
+}
+
+// cancel close timer
+function mcancelclosetime()
+{
+	if(closetimer)
+	{
+		window.clearTimeout(closetimer);
+		closetimer = null;
+	}
+}
+
+// close layer when click-out
+document.onclick = mclose; 
+// -->
+</script>
+</HEAD>
+<BODY>
+<div id="content">
+<table width="970" border="1" cellspacing="0" cellpadding=" ">
+  <tr valign="top"> 
+    <td width="370" height="106">
+      <img src="globalimages/dilan_logo.jpg" width="370" height="106" alt="Banner Picture for Website">	</td>
+      <td width="591" height="106">
+      <img src="globalimages/topbannerdilan.png" width="593" height="106" alt="Banner Picture for Website">	</td>
+  </tr>
+</table>
+<table width="970" border="1" cellpadding=" ">
+  <tr><td>
+   <ul id="sddm">
+    
+    
+    <li><a href="#" 
+        onmouseover="mopen('m1')" 
+        onmouseout="mclosetime()">Company Info</a>
+        <div id="m1" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="overview.html">Overview</a>
+         <a href="expertise.html">Expertise</a>
+        </div>
+    </li>
+    <li><a href="#" 
+        onmouseover="mopen('m2')" 
+        onmouseout="mclosetime()">Services</a>
+        <div id="m2" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="webservices.html">Web Design</a>
+        <a href="as400services.html">I-Series Software</a>
+        <a href="b2bservices.html">B2B Services</a>
+        
+        </div>
+     </li>
+     
+     <li><a href="#" 
+        onmouseover="mopen('m3')" 
+        onmouseout="mclosetime()">Our Strategy</a>
+        <div id="m3" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="process.html">Process methodology</a>
+        <a href="quality.html">Quality Assuarance</a>
+       
+        </div>
+     </li>
+     
+        
+    <li><a href="clients.html">Clients</a></li>
+    <li><a href="portfolio.html">Our Portfolio</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+   	</ul>
+    <div style="clear:both"></div>
+  
+  </td></tr>
+</table>
+
+<table width="970" height="100" border="1" cellpadding=" ">
+    <td>
+  <img src="images/secondleveledited.png" alt="" name="logo" width="962" height="145"></td>
+</table>
+<table width="970" height="1358" border="1" cellpadding=" ">
+  <tr>
+  
+  	<td width="424" height="800">
+	
+         <h1 class="style1"> <img src="images/companyheadshort.png" alt="aboutdilan" name="keypoint2" width="407" height="69" align="top"></h1>
+			
+<table width="363" height="454" border="3" align="center" cellpadding="1" cellspacing="1"  bgcolor="#E9E9E9" >
+	 		  <tr>
+	 		    <td width="347" height="446"><h3 align="justify">We believe in understanding the issues that you face in your development environment and presenting approaches from project outsourcing to contract labor to consulting services to training centered on software development tools and processes. </h3>
+                <h3 align="justify"> We work side-by-side with you to create comprehensive solutions that are designed to extend and enhance your business. Our breadth of knowledge and wide range of solutions will help you realize your development goals, whether they are decreased time to market, increased staff efficiency, or reduced development costs.</h3>
+	 		     
+ 		        <h3 align="justify">Our mission is to share with our clients, knowledge and support of the three primary, independent software development elements: the people, the tools and the process.</h3>	 
+                <h3 align="justify">Client Testimonial will give you the success of our Story. Software for every small business for affordable prices.   Our quality standards and transparent business operating model inspire trust in  our clients. </h3>
+                </td>
+ 		      </tr>
+	  </table>
+	  <table width="364" height="310" border="3" align="center" cellpadding="5" cellspacing="1">
+<caption>
+	 		    
+	    
+              <br>
+              <img name="keypoint3" src="images/pointform2.png" width="290" height="46" alt="Latest news">
+	 		  <br>
+	 		 
+</caption>
+	 		  <tr>
+	 		    <td width="344" height="300" bgcolor="#F0F0F0"><ul>
+	 		      <li class="epac">IBM Partner for I-series Software Development ( Old AS400 )</li>
+	 		      <li class="epac">RPG is now used for web design with I-series Database</li>
+	 		      <li class="epac">ISO 9001: 2000 Certified</li>
+	 		      <li class="epac">New form design technology introduced to  I-series server software</li>
+	 		      <li class="epac">Branch in Sri Lanka - New web develoment team ( very competitive prices )</li>
+	 		      <li class="epac">Live Support in Canada 24/7</li>
+ 		        </ul></td>
+ 		      </tr>
+	  </table>
+      
+   </td>
+    
+    <td width="534">
+	
+         <h1 class="style1"><img name="keypoint2" src="images/pointform.png" width="290" height="46" alt="company strength"></h1>
+			
+<table width="500" height="110" border="3" align="center" cellpadding="1" cellspacing="1" bgcolor="#FFFFFF">
+	 		  <tr>
+	 		    <td><p align="justify">Dilan Enterprises delivers value-enhancive solutions in IT  and back Office Support. We operate a business model that focuses on creating  quality deliverables, continuously anticipates client challenges and evolves  accordingly to provide cutting-edge solutions, thus enabling sustainability.  Our quality standards and transparent business operating model inspire trust in  our clients.</p></td>
+ 		      </tr>
+	  </table>
+	  <table width="501" height="416" border="3" align="center" cellpadding="5" cellspacing="1">
+<caption>
+	 		    <br>
+	          <img name="keypoint3" src="images/webteam.png" width="302" height="46" alt="web develoment team">
+	    </caption>
+	 		  <tr>
+	 		    <td width="536" height="408"><img src="images/team.jpg" width="479" height="374" alt="imagecomp"></td>
+        </tr>
+	  </table>
+	  <p align="justify" class="padding  style11"><img src="images/pointform5.png" alt="Standard Package" name="pinpoint" width="290" height="46" hspace="100"></p>
+<h3 align="center"><img src="images/standardpackage2.png" alt="financial package" name="ourmodel" width="232" height="232" hspace="25"><img src="images/standardpackage.png" alt="software method" name="ourmodel" width="232" height="232"></h3>
+	  
+
+  </tr>
+  
+<tr>
+  
+  	<td width="424" height="335">
+	
+         <h1 class="style1"> <img name="keypoint2" src="images/pointform4.png" width="290" height="46" alt="our clients"></h1>
+			
+	 		<table width="362" height="196" border="3" align="center" cellpadding="1" cellspacing="1" bgcolor="#E9E9E9">
+	 		  <tr>
+	 		    <td width="350" height="136"><ul>
+	 		      <li class="epac2">Skyline Furniture Ltd. </li>
+	 		      <li class="epac2">Trans Am Piping Products Ltd.</li>
+	 		      <li class="epac2">Dynasty Furniture</li>
+	 		      <li class="epac2">Informax Sri Lanka</li>
+	 		      <li class="epac2">D &amp; N Enterprises</li>
+	 		      <li class="epac2">Sounds 'R' US</li>
+	 		      <li class="epac2">Dream Works</li>
+	 		      </ul></td>
+ 		      </tr>
+	 		  
+	  </table>
+	  
+    </td>
+
+    <td width="534">
+	
+<h1 class="style1"> <img name="keypoint2" src="images/pointform3.png" width="290" height="46" alt="Our Service"></h1>
+			
+	 		<table width="400" height="150" border="3" align="center" cellpadding="1" cellspacing="1" bgcolor="#C1CEEE">
+	 		  <tr>
+	 		    <td>Web Services</td>
+ 		      </tr>
+	 		  <tr>
+	 		    <td>Software Development</td>
+ 		      </tr>
+	 		  <tr>
+	 		    <td>Technology Support</td>
+ 		      </tr>
+	 		  <tr>
+	 		    <td>Back Office Support</td>
+ 		      </tr>
+	 		  <tr>
+	 		    <td>Training</td>
+ 		      </tr>
+	 		  <tr>
+	 		    <td width="388"><p align="justify">@ On site and Off Site </p></td>
+ 		      </tr>
+	  </table>
+	  
+    </td>
+    
+       
+  </tr>  
+  
+</table>
+
+
+
+<p>	<img src="globalimages/bottom.png" width="972" height="46" alt="Page Bottom Indication"></p>
+</div>
+</BODY>
+</HTML>

@@ -1,0 +1,255 @@
+<HTML>
+<!--Created By : Natasha Gunaratne-->
+<!--Created For: CMN352 Class - SAIT-->
+<!--Created Purpose : Dilan Enterprises Clients Page -->
+<!--Function :  This is the  Client page of Dilan Enterprises website -->
+<!--         :  Dropdown Menu created to access different pages -->
+
+
+
+<HEAD>
+<TITLE>Welcome to Dilan Enterprise - Software 'R' Us </TITLE>
+<link rel="stylesheet" href="scripts/mycss.css" type="text/css">
+
+<style type="text/css">
+
+ 
+#sddm
+{	margin: 0;
+	padding: 0;
+	z-index: 30}
+
+#sddm li
+{	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	font: bold 11px arial}
+
+#sddm li a
+{	display: block;
+	margin: 0 1px 0 0;
+	padding: 4px 10px;
+	width: 160px;
+	background: #5970B2;
+	color: #FFF;
+	text-align: center;
+	text-decoration: none}
+
+#sddm li a:hover
+{	background: #49A3FF}
+
+#sddm div
+{	position: absolute;
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+	background: #EAEBD8;
+	border: 1px solid #5970B2}
+
+	#sddm div a
+	{	position: relative;
+		display: block;
+		margin: 0;
+		padding: 5px 10px;
+		width: auto;
+		white-space: nowrap;
+		text-align: left;
+		text-decoration: none;
+		background: #EAEBD8;
+		color: #2875DE;
+		font: 11px arial}
+
+	#sddm div a:hover
+	{	background: #49A3FF;
+		color: #FFF}
+	 	 
+
+a:link {color:#FF0000;}    /* unvisited link */
+a:visited {color:#00FF00;} /* visited link */
+a:hover {color:#FF00FF;}   /* mouse over link */
+a:active {color:#0000FF;}  /* selected link */
+p:first-letter{font-size: 200%; color:#660033;}
+
+<!--
+.style1 {color:#309;
+font-size:14px;
+font-family:Arial, Helvetica, sans-serif}
+
+.style12 {color:#309;
+font-size:12px;
+font-family:Arial, Helvetica, sans-serif}
+
+.style13 {color:#309;
+font-size:10px;
+font-family:Arial, Helvetica, sans-serif}
+
+
+-->
+</style>
+<script type="text/javascript">
+<!--
+var timeout         = 500;
+var closetimer		= 0;
+var ddmenuitem      = 0;
+
+// open hidden layer
+function mopen(id)
+{	
+	// cancel close timer
+	mcancelclosetime();
+
+	// close old layer
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+	// get new layer and show it
+	ddmenuitem = document.getElementById(id);
+	ddmenuitem.style.visibility = 'visible';
+
+}
+// close showed layer
+function mclose()
+{
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+}
+
+// go close timer
+function mclosetime()
+{
+	closetimer = window.setTimeout(mclose, timeout);
+}
+
+// cancel close timer
+function mcancelclosetime()
+{
+	if(closetimer)
+	{
+		window.clearTimeout(closetimer);
+		closetimer = null;
+	}
+}
+
+// close layer when click-out
+document.onclick = mclose; 
+// -->
+</script>
+
+
+</HEAD>
+<BODY>
+<table width="970" border="2" cellspacing="0" cellpadding=" ">
+  <tr valign="top"> 
+    <td width="370" height="106">
+      <img src="globalimages/dilan_logo.jpg" width="370" height="106" alt="Banner Picture for Website">	</td>
+      <td width="591" height="106">
+      <img src="globalimages/topbannerdilan.png" width="593" height="106" alt="Banner Picture for Website">	</td>
+  </tr>
+</table>
+<table width="970" border="1" cellpadding=" ">
+  <tr>
+   <ul id="sddm">
+    
+    
+    <li><a href="#" 
+        onmouseover="mopen('m1')" 
+        onmouseout="mclosetime()">Company Info</a>
+        <div id="m1" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="overview.html">Overview</a>
+        <a href="expertise.html">Expertise</a>
+       
+        
+        </div>
+    </li>
+    <li><a href="#" 
+        onmouseover="mopen('m2')" 
+        onmouseout="mclosetime()">Services</a>
+        <div id="m2" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="webservices.html">Web Design</a>
+        <a href="as400services.html">I-Series Software</a>
+        <a href="b2bservices.html">B2B Services</a>
+        
+        </div>
+     </li>
+     
+     <li><a href="#" 
+        onmouseover="mopen('m3')" 
+        onmouseout="mclosetime()">Our Strategy</a>
+        <div id="m3" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="process.html">Process methodology</a>
+        <a href="quality.html">Quality Assuarance</a>
+        
+        </div>
+     </li>
+     
+        
+    <li><a href="clients.html">Clients</a></li>
+    <li><a href="portfolio.html">Our Portfolio</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+   	</ul>
+    <div style="clear:both"></div>
+  
+  </tr>
+</table>
+
+<table width="970" height="50" border="1" cellpadding="1" bgcolor="#E1E8FD">
+	<tr>
+    <td><img src="images/ourclients.png" alt="Our Clients" name="pagetagheader" width="955" height="42" align="absmiddle">
+    </td>
+    </tr>
+</table>
+
+
+<table width="970" height="641" border="1" cellpadding="5" cellspacing="1" bgcolor="#EBEFFE">
+  <tr>
+    <td width="697"><table width="688" height="363" border="3" cellpadding="5" cellspacing="2" bgcolor="#F9F9F9">
+      <tr>
+        <td width="666" height="43"><img name="overviewhead" src="images/clienttestimonials.png" width="650" height="36" alt="client testimonial" style="background-color: #999999"></td>
+      </tr>
+      <tr>
+        <td><table width="649" height="275" border="3" cellpadding="5" cellspacing="1" >
+          <tr>
+            <td width="71">&nbsp;</td>
+            <td width="545"><h1>Skyline Furniture Ltd., Calgary, Alberta, Canada</h1>
+<h2>"This company has taken a great burden off my shoulders by handling customer support well for us."</h2>
+<h1>D &amp; N Car Dealers</h1>
+<h2>"We would like to thank Dilan Enterprises for their contributions with our numerous projects."</h2>
+<h1>Trans Am Piping Products Ltd. Calgary, Alberta, Canada</h1>
+<h2>"Your talented team has gone above and beyond their scope to provide excellent service to our company and our clients."</h2>
+</td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+    <td width="240"><table width="240" height="360" border="3" cellpadding="5" cellspacing="1" bgcolor="#8AA3E1">
+      <tr>
+        <td width="220" height="52"><img name="downloadbrochure" src="images/dncar.png" width="226" height="44" alt="car dealer"></td>
+      </tr>
+      <tr>
+        <td><img src="images/infosoft.gif" alt="infosoft" name="ourpackage" width="193" height="85" hspace="15" style=""></td>
+      </tr>
+      <tr>
+        <td><img name="Testimonials" src="images/dreamw.png" width="226" height="47" alt="dream music"></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="250"><table width="693" height="174" border="3" cellpadding="5" cellspacing="1">
+      <tr>
+        <td width="201" height="172"><img name="skyline" src="images/skyline.jpg" width="201" height="120" alt="skyline"></td>
+        <td width="250"><img name="dynasty" src="images/dynasty.gif" width="250" height="83" alt="dynasty"></td>
+        <td width="196"><img name="transam" src="images/transam.jpg" width="200" height="100" alt="transam"></td>
+      </tr>
+    </table></td>
+    <td><h2>&ldquo;<span class="style11"><strong>Dilan  Enterprises</strong></span> brings together high quality resources, Software, and expertise to  help create valuable relationships between our clients, their customer and  their employees&rdquo;</h2></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>	<img src="globalimages/bottom.png" width="972" height="46" alt="Page Bottom Indication"></p>
+</BODY>
+</HTML>

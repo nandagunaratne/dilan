@@ -1,0 +1,347 @@
+<HTML>
+<!--Created By : Natasha Gunaratne-->
+<!--Created For: CMN352 Class - SAIT-->
+<!--Created Purpose : Dilan Enterprises contact Page -->
+<!--Function :  This is the  page of Dilan Enterprises website -->
+<!--         :  Dropdown Menu created to access different pages -->
+
+
+
+<HEAD>
+<TITLE>Welcome to Dilan Enterprise - Software 'R' Us </TITLE>
+<link rel="stylesheet" href="scripts/mycss.css" type="text/css">
+
+
+<style type="text/css">
+
+ 
+#sddm
+{	margin: 0;
+	padding: 0;
+	z-index: 30}
+
+#sddm li
+{	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	font: bold 11px arial}
+
+#sddm li a
+{	display: block;
+	margin: 0 1px 0 0;
+	padding: 4px 10px;
+	width: 160px;
+	background: #5970B2;
+	color: #FFF;
+	text-align: center;
+	text-decoration: none}
+
+#sddm li a:hover
+{	background: #49A3FF}
+
+#sddm div
+{	position: absolute;
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+	background: #EAEBD8;
+	border: 1px solid #5970B2}
+
+	#sddm div a
+	{	position: relative;
+		display: block;
+		margin: 0;
+		padding: 5px 10px;
+		width: auto;
+		white-space: nowrap;
+		text-align: left;
+		text-decoration: none;
+		background: #EAEBD8;
+		color: #2875DE;
+		font: 11px arial}
+
+	#sddm div a:hover
+	{	background: #49A3FF;
+		color: #FFF}
+	 	 
+
+a:link {color:#FF0000;}    /* unvisited link */
+a:visited {color:#00FF00;} /* visited link */
+a:hover {color:#FF00FF;}   /* mouse over link */
+a:active {color:#0000FF;}  /* selected link */
+
+
+<!--
+.style1 {color: #000099}
+-->
+</style>
+<script type="text/javascript">
+<!--
+var timeout         = 500;
+var closetimer		= 0;
+var ddmenuitem      = 0;
+
+// open hidden layer
+function mopen(id)
+{	
+	// cancel close timer
+	mcancelclosetime();
+
+	// close old layer
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+	// get new layer and show it
+	ddmenuitem = document.getElementById(id);
+	ddmenuitem.style.visibility = 'visible';
+
+}
+// close showed layer
+function mclose()
+{
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+}
+
+// go close timer
+function mclosetime()
+{
+	closetimer = window.setTimeout(mclose, timeout);
+}
+
+// cancel close timer
+function mcancelclosetime()
+{
+	if(closetimer)
+	{
+		window.clearTimeout(closetimer);
+		closetimer = null;
+	}
+}
+
+// show canada address on the map
+function showCanadaAddress()
+{
+	var addr = document.getElementById('canada_address').innerHTML;
+	var panel = document.getElementById('address_panel');
+	var evt = event ? event : window.event;
+	var mouseX, mouseY;
+
+    if(evt.offsetX) {
+        mouseX = evt.offsetX;
+        mouseY = evt.offsetY - 150;
+		if(document.all){
+			mouseX += 40;
+			mouseY += 310;
+		}
+    }
+    else if(evt.layerX) {
+        mouseX = evt.layerX;
+        mouseY = evt.layerY - 150;
+    }
+	
+	panel.innerHTML = addr;
+	panel.style.position = 'absolute';
+	panel.style.visibility = 'visible';
+    panel.style.left = mouseX + 'px';
+    panel.style.top = mouseY + 'px';
+}
+
+// show sri lanka address on the map
+function showSriLankaAddress()
+{
+	var addr = document.getElementById('srilanka_address').innerHTML;
+	var panel = document.getElementById('address_panel');
+	var evt = event ? event : window.event;
+	var mouseX, mouseY;
+
+    if(evt.offsetX) {
+        mouseX = evt.offsetX;
+        mouseY = evt.offsetY - 150;
+		if(document.all){
+			mouseX += 40;
+			mouseY += 310;
+		}
+    }
+    else if(evt.layerX) {
+        mouseX = evt.layerX;
+        mouseY = evt.layerY - 150;
+    }
+	
+	panel.innerHTML = addr;
+	panel.style.position = 'absolute';
+	panel.style.visibility = 'visible';
+    panel.style.left = mouseX + 'px';
+    panel.style.top = mouseY + 'px';
+}
+
+// hide address overlay on the map
+function hideAddress(){
+	var panel = document.getElementById('address_panel');
+	panel.style.visibility = 'hidden';
+}
+
+// close layer when click-out
+document.onclick = mclose; 
+// -->
+</script>
+</HEAD>
+<BODY>
+<table width="970" border="2" cellspacing="0" cellpadding=" ">
+  <tr valign="top"> 
+    <td width="370" height="106">
+      <img src="globalimages/dilan_logo.jpg" width="370" height="106" alt="Banner Picture for Website">	</td>
+      <td width="591" height="106">
+      <img src="globalimages/topbannerdilan.png" width="593" height="106" alt="Banner Picture for Website">	</td>
+  </tr>
+</table>
+<table width="970" border="1" cellpadding=" ">
+  <tr>
+   <ul id="sddm">
+    
+    
+    <li><a href="#" 
+        onmouseover="mopen('m1')" 
+        onmouseout="mclosetime()">Company Info</a>
+        <div id="m1" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="overview.html">Overview</a>
+        <a href="expertise.html">Expertise</a>
+       
+        
+        </div>
+    </li>
+    <li><a href="#" 
+        onmouseover="mopen('m2')" 
+        onmouseout="mclosetime()">Services</a>
+        <div id="m2" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="webservices.html">Web Design</a>
+        <a href="as400services.html">I-Series Software</a>
+        <a href="b2bservices.html">B2B Services</a>
+        
+        </div>
+     </li>
+     
+     <li><a href="#" 
+        onmouseover="mopen('m3')" 
+        onmouseout="mclosetime()">Our Strategy</a>
+        <div id="m3" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="process.html">Process methodology</a>
+        <a href="quality.html">Quality Assuarance</a>
+        
+        </div>
+     </li>
+     
+        
+    <li><a href="clients.html">Clients</a></li>
+    <li><a href="portfolio.html">Our Portfolio</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+   	</ul>
+    <div style="clear:both"></div>
+  
+  </tr>
+</table>
+
+<table width="970" height="50" border="1" cellpadding="1">
+	<tr>
+    <td><img src="images/contactus.png" alt="This Page info" name="pagetagheader" width="955" height="42" align="absmiddle">
+    </td>
+    </tr>
+</table>
+
+
+<table width="971" height="652" border="3" cellpadding="5" cellspacing="1" bgcolor="#F5F5F5">
+  <tr>
+    <td width="653"><table width="636" height="363" border="3" cellpadding="5" cellspacing="2">
+      <tr>
+        <td height="43"><img src="images/ourlocations.png" alt="" name="overviewhead" width="631" height="31" style=""></td>
+      </tr>
+      <tr>
+        <td><table width="611" height="275" border="0" cellpadding="5" cellspacing="1">
+          <tr>
+			<!-- location map hot spot definitions-->
+			<map name="locations">
+				<area shape="circle" coords="398,211,10" href="#" onMouseOver="javascript:showSriLankaAddress()" onMouseOut="javascript:hideAddress()" >
+				<area shape="circle" coords="106,123,12" href="#" onMouseOver="javascript:showCanadaAddress()" onMouseOut="javascript:hideAddress()">
+			</map>
+            <td width="294"><img src="images/worldmap.jpg" alt="Our offices" name="locationmap" width="575" height="377" hspace="10" usemap="#locations"></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+    <td width="285"><table width="250" height="254" border="3" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="246" height="62"><img name="downloadbrochure" src="images/livesupport.jpg" width="246" height="62" alt=""></td>
+      </tr>
+      <tr>
+        <td height="154"><img src="images/24x7support.jpg" alt="Our package" name="ourpackage" width="246" height="154" align="top" style="background-color: #CCCCCC"></td>
+      </tr>
+      <tr>
+        <td height="38"><img src="images/telsupport.png" alt="Testimonials" name="Testimonials" width="246" height="38" align="top"></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="250"><table width="635" height="196" border="3" cellpadding="5" cellspacing="1">
+      <tr>
+        <td width="303"><ul>
+          <li>CANADA</li>
+          </ul>
+          <p id="canada_address">Dilan Enterprises - Software 'R' Us<br>
+              No 19, Blueridge Lane<br>
+              Calgary , Alberta, T3L 2N5<br>
+              Tel - 403-208- 0795<br>
+              Fax - 403-208-0796<br>
+          Email - dilan07t@telus.net</p></td>
+        <td width="299"><ul>
+          <li>Sri Lanka</li>
+          </ul>
+          <p id="srilanka_address">Dilan Enterprises - 'GEO Systems'.<br>
+              No 3, Bhathiya Mawatha<br>
+              makola Road, Kiribathgoda , Sri Lanka<br>
+              Tel - 01194777480694<br>
+              Fax -01194772958754<br>
+          Email - support@dilanenterprises.com</p></td>
+       
+      </tr>
+      <tr><p class="style1">We have offices in the following locations. Feel free to contact us on your requirements at any time.
+</p>
+      </tr>
+    </table></td>
+    <td><form name="form1" method="post" action="">
+     
+      <p class="epac">EMAIL US</p>
+      <div align="right">
+      <p>Name:
+        <input type="text" name="Name" id="Name">
+      </p>
+      <p>Phone Number:
+        <input type="text" name="phonenum" id="phonenum">
+      </p>
+      <p>E-Mail Address:
+        <input type="text" name="emailadd" id="emailadd">
+      </p>
+      <p>Enter your Message:
+        <input type="text" name="txtmessage" id="txtmessage">
+      </p>
+      <p>
+        <label> 
+          <input type="submit" name="buttonsubmit" id="buttonsubmit" value="Submit">
+        </label>
+      </p>
+      </div>
+    </form></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>	<img src="globalimages/bottom.png" width="972" height="46" alt="Page Bottom Indication"></p>
+
+<!-- dviv used to show the location addresses on the map -->
+<div id="address_panel" style="background-color:#f0f0f0; border:1px solid black; padding:5px;"></div>
+
+</BODY>
+</HTML>

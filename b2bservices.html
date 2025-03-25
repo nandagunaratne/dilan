@@ -1,0 +1,239 @@
+<HTML>
+<!--Created By : Natasha Gunaratne-->
+<!--Created For: CMN352 Class - SAIT-->
+<!--Created Purpose : Dilan Enterprises B2B Services Page -->
+<!--Function :  This is the  page of Dilan Enterprises website -->
+<!--         :  Dropdown Menu created to access different pages -->
+
+
+
+<HEAD>
+<TITLE>Welcome to Dilan Enterprise - Software 'R' Us </TITLE>
+<link rel="stylesheet" href="scripts/mycss.css" type="text/css">
+
+<style type="text/css">
+
+ 
+ 
+#sddm
+{	margin: 0;
+	padding: 0;
+	z-index: 30}
+
+#sddm li
+{	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	font: bold 11px arial}
+
+#sddm li a
+{	display: block;
+	margin: 0 1px 0 0;
+	padding: 4px 10px;
+	width: 160px;
+	background: #5970B2;
+	color: #FFF;
+	text-align: center;
+	text-decoration: none}
+
+#sddm li a:hover
+{	background: #49A3FF}
+
+#sddm div
+{	position: absolute;
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+	background: #EAEBD8;
+	border: 1px solid #5970B2}
+
+	#sddm div a
+	{	position: relative;
+		display: block;
+		margin: 0;
+		padding: 5px 10px;
+		width: auto;
+		white-space: nowrap;
+		text-align: left;
+		text-decoration: none;
+		background: #EAEBD8;
+		color: #2875DE;
+		font: 11px arial}
+
+	#sddm div a:hover
+	{	background: #49A3FF;
+		color: #FFF}
+	 	 
+
+a:link {color:#FF0000;}    /* unvisited link */
+a:visited {color:#00FF00;} /* visited link */
+a:hover {color:#FF00FF;}   /* mouse over link */
+a:active {color:#0000FF;}  /* selected link */
+p:first-letter{font-size: 200%; color:#660033;}
+
+<!--
+.style1 {color: #000099}
+-->
+</style>
+<script type="text/javascript">
+<!--
+var timeout         = 500;
+var closetimer		= 0;
+var ddmenuitem      = 0;
+
+// open hidden layer
+function mopen(id)
+{	
+	// cancel close timer
+	mcancelclosetime();
+
+	// close old layer
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+	// get new layer and show it
+	ddmenuitem = document.getElementById(id);
+	ddmenuitem.style.visibility = 'visible';
+
+}
+// close showed layer
+function mclose()
+{
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+}
+
+// go close timer
+function mclosetime()
+{
+	closetimer = window.setTimeout(mclose, timeout);
+}
+
+// cancel close timer
+function mcancelclosetime()
+{
+	if(closetimer)
+	{
+		window.clearTimeout(closetimer);
+		closetimer = null;
+	}
+}
+
+// close layer when click-out
+document.onclick = mclose; 
+// -->
+</script>
+</HEAD>
+<BODY>
+<table width="970" border="2" cellspacing="0" cellpadding=" ">
+  <tr valign="top"> 
+    <td width="370" height="106">
+      <img src="globalimages/dilan_logo.jpg" width="370" height="106" alt="Banner Picture for Website">	</td>
+      <td width="591" height="106">
+      <img src="globalimages/topbannerdilan.png" width="593" height="106" alt="Banner Picture for Website">	</td>
+  </tr>
+</table>
+<table width="970" border="1" cellpadding=" ">
+  <tr>
+   <ul id="sddm">
+    
+    
+    <li><a href="#" 
+        onmouseover="mopen('m1')" 
+        onmouseout="mclosetime()">Company Info</a>
+        <div id="m1" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="overview.html">Overview</a>
+        <a href="expertise.html">Expertise</a>
+       
+        
+        </div>
+    </li>
+    <li><a href="#" 
+        onmouseover="mopen('m2')" 
+        onmouseout="mclosetime()">Services</a>
+        <div id="m2" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="webservices.html">Web Design</a>
+        <a href="as400services.html">I-Series Software</a>
+        <a href="b2bservices.html">B2B Services</a>
+        
+        </div>
+     </li>
+     
+     <li><a href="#" 
+        onmouseover="mopen('m3')" 
+        onmouseout="mclosetime()">Our Strategy</a>
+        <div id="m3" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="process.html">Process methodology</a>
+        <a href="quality.html">Quality Assuarance</a>
+        
+        </div>
+     </li>
+     
+        
+    <li><a href="clients.html">Clients</a></li>
+    <li><a href="portfolio.html">Our Portfolio</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+   	</ul>
+    <div style="clear:both"></div>
+  
+  </tr>
+</table>
+
+<table width="970" height="50" border="1" cellpadding="1">
+	<tr>
+    <td><img src="images/ourstrategy.png" alt="iseries server" name="pagetagheader" width="947" height="46" align="absmiddle">
+    </td>
+    </tr>
+</table>
+
+
+<table width="964" height="816" border="3" cellpadding="5" cellspacing="1">
+  <tr>
+    <td width="535"><table width="535" height="783" border="3" cellpadding="5" cellspacing="2">
+      <tr>
+        <td width="513" height="43"><img name="overviewhead" src="images/b2bservices.png" width="500" height="27" alt="" style="background-color: #999999"></td>
+      </tr>
+      <tr>
+        <td height="726"><table width="492" height="662" border="3" cellpadding="5" cellspacing="1" bgcolor="#FFFFFF">
+          <tr>
+            <td width="77" height="654"><img name="bordertext" src="images/verticalline.png" width="77" height="602" alt="" style="background-color: #0066FF"></td>
+            <td width="495"><h1><strong>B2B Service</strong></h1>
+              <p>We Use IBM Technology for B2B Service.</p>
+              <p>&nbsp;</p>
+              <p><strong>Why IBM for B2B Integration Services?</strong></p>
+              <p>IBM Sterling B2B Integration Services are designed to alleviate the burden on internal resources by providing secure connectivity and collaboration with your customers, suppliers, and business partners.</p>
+              <p><img src="images/b2bconsulting.png" alt="b2bconsulting" width="140" height="64" hspace="100"></p>
+              <p> We provide Consultation for buisiness transition. Our experts will provide the easiest solution</p>
+              <p><img src="images/techsupport.png" alt="techsupport" width="140" height="64" hspace="100"></p>
+<p>Accelerate B2B collaboration with global customers and suppliers by leveraging our Application Software</p>
+              <p><img src="images/software.png" alt="softwaretool" width="140" height="64" hspace="100"></p>
+              <h3 class="style13">&nbsp;</h3></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+    <td width="396"><table width="399" height="792" border="3" cellpadding="5" cellspacing="1" bgcolor="#F7F7F7">
+      <tr>
+        <td width="379" height="52"><p>Transfer Data to Microsoft is not a problem</p>
+          <p><img src="images/b2bpicture.png" alt="" name="downloadbrochure" width="300" height="225" hspace="40"></p></td>
+      </tr>
+      <tr>
+        <td><img src="images/standardpackage2.png" alt="Our package" name="ourpackage" width="232" height="232" hspace="50" align="middle" style="background-color: #CCCCCC"></td>
+      </tr>
+      <tr>
+        <td><p>Complete Integration Solution</p>
+          <p><img src="images/b2bpicture.gif" alt="Testimonials" name="Testimonials" width="363" height="268" hspace="0"></p></td>
+      </tr>
+    </table></td>
+  </tr>
+  
+</table>
+<p>&nbsp;</p>
+<p>	<img src="globalimages/bottom.png" width="972" height="46" alt="Page Bottom Indication"></p>
+</BODY>
+</HTML>
